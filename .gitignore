@@ -1,0 +1,6 @@
+*.aab
+*.jks
+*.keystore
+*.pem
+.env
+local.properties
