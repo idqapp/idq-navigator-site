@@ -37,7 +37,7 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 .fz b.t{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:0 6px;white-space:nowrap}
 .fz table{border-collapse:collapse;width:100%;font-size:15px;margin:8px 0}.fz td,.fz th{border:1px solid var(--bd);padding:6px 8px;text-align:left;vertical-align:top}.fz th{background:var(--card)}
 .fz .nota{background:var(--card);border-radius:12px;padding:10px 12px;margin:10px 0}.fz .sotto{color:var(--mu)}.fz h3{font-size:17px;margin:18px 0 4px}
-</style></head>
+.vid{margin:12px 0;text-align:center}.vid video{max-width:300px;width:100%;border-radius:14px;box-shadow:0 2px 12px rgba(0,0,0,.25);background:#000}.vid p{font-size:14px;margin:6px 0;opacity:.8}</style></head>
 <body>
 <header class="top"><a class="brand" href="index.html"><img src="immagini/icona.png" alt="">IDQ Navigator</a><div class="lingue"><button data-l="it">Italiano</button><button data-l="en">English</button><button data-l="fr">Français</button><button data-l="de">Deutsch</button><button data-l="es">Español</button></div></header>
 <main><div class="l fz" data-l="it">
@@ -63,7 +63,8 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <a href="#imp-it">16. Impostazioni</a>
 <a href="#privacy-it">17. Dati e privacy</a>
 <a href="#prob-it">18. Problemi comuni</a>
-<a href="#crediti-it">19. Crediti</a>
+<a href="#online-it">19. Servizi online, ricerca di luoghi e 2D/3D</a>
+<a href="#crediti-it">20. Crediti</a>
 </nav>
 
 <h2 id="intro-it">1. Cos'è e come funziona</h2>
@@ -97,7 +98,7 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <p>Tocca il <b>microfono</b> a destra nella barra di ricerca e pronuncia l'indirizzo in italiano.</p>
 <h3>Con il tocco lungo</h3>
 <p>Tieni premuto a lungo un punto della mappa: diventa la destinazione. Utile per posti senza indirizzo (un parcheggio, un sentiero, un punto sul mare).</p>
-<p>Appena la destinazione è scelta, l'app calcola il percorso (di solito in meno di un secondo) e mostra <b>chilometri, durata e orario di arrivo</b>. Il percorso è la linea blu.</p>
+<p>Appena la destinazione è scelta, l'app calcola il percorso (di solito in meno di un secondo) e mostra <b>chilometri, durata e orario di arrivo</b>. Il percorso è la linea verde.</p>
 
 <h2 id="partenza-it">5. Scegliere un'altra partenza</h2>
 <p>Di base si parte dalla tua posizione GPS. Per pianificare un percorso lontano (per esempio da casa mentre sei altrove): <b class="t">Menu</b> › <b class="t">Percorso</b> › <b class="t">Scegli un'altra partenza</b>, poi cerca o tieni premuto sulla mappa. Il percorso si calcola da quel punto e puoi vederne chilometri, durata e tracciato. Per guidare davvero con <b class="t">Avvia</b> la partenza deve tornare al GPS: <b class="t">Partenza: torna al GPS</b>.</p>
@@ -113,6 +114,7 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <p>Con una destinazione scelta, <b class="t">Menu</b> › <b class="t">Percorso</b> › <b class="t">Tappe intermedie</b> permette di aggiungere <b>tutte le tappe che vuoi</b>: tocca <b>Aggiungi tappa</b>, poi cerca un luogo o tieni premuto sulla mappa. Nell'elenco puoi spostare le tappe con ▲ ▼ o toglierle con ✕: il percorso si ricalcola da solo. Sulla mappa le tappe sono numerate e, durante la guida, a ogni tappa la voce dice che sei arrivato e poi riparte verso la successiva. Le tappe si salvano insieme all'itinerario.</p>
 
 <h2 id="nav-it">7. Navigare</h2>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/navigazione.mp4"></video><p>La navigazione: l'auto resta al centro e si muove la mappa; percorso verde, limiti, avvisi e voce.</p></div>
 <h3>Avvia, Termina</h3>
 <ul>
 <li><b class="t">▶ Avvia</b>: navigazione vera col GPS.</li>
@@ -162,16 +164,22 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <p><b class="t">Menu</b> › <b class="t">Avvisi sulla mappa</b>: una spunta per ogni tipo. Spento = niente simbolo e niente avviso. A piedi e in bici gli avvisi pensati per le auto non compaiono.</p>
 
 <h2 id="segnala-it">10. Segnalare un avviso</h2>
-<p>Aiuti gli altri conducenti, e loro aiutano te. Mentre navighi c'è il pulsante tondo con la <b>macchina fotografica</b> (arancione): toccalo e scegli:</p>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/segnala.mp4"></video><p>Il pulsante Segnala con i tasti grandi e la domanda "c'è ancora?" quando passi da una segnalazione di altri.</p></div>
+<p>Aiuti gli altri conducenti, e loro aiutano te. Mentre guidi, in basso a destra, c'è il pulsante <b>Segnala</b>: toccalo e compare una tabella con <b>tasti grandi</b>, facili da leggere e da toccare. <b>Posto di blocco</b> e <b>Autovelox fisso</b> sono in alto, in evidenza; sotto trovi:</p>
 <ul>
-<li>Autovelox fisso (che manca sulla mappa)</li>
 <li>Controllo mobile</li>
+<li>Incidente</li>
+<li>Traffico</li>
+<li>Strada bloccata (temporanea)</li>
+<li>Pericolo sulla strada</li>
 <li>Portale Tutor</li>
 <li>Autovelox che <b>non c'è più</b></li>
-<li>Incidente · Traffico · Strada chiusa · Pericolo sulla strada</li>
 </ul>
 <p>Si può segnalare anche da fermi: <b class="t">Menu</b> › <b class="t">Segnala</b>. La segnalazione prende la tua posizione del momento. Se non c'è internet, resta nel telefono e parte da sola appena torna la rete.</p>
-<p>Le segnalazioni di autovelox fissi, Tutor e "non c'è più" entrano nei dati solo se confermate da più persone diverse; i mobili, incidenti, traffico, chiusure e pericoli sono visibili agli altri subito, per un tempo limitato. Tutto avviene in forma anonima (vedi Dati e privacy).</p>
+<p>Controlli mobili, posti di blocco, incidenti, traffico, strade bloccate e pericoli sono visibili agli altri subito, per un tempo limitato. Gli autovelox fissi, i Tutor e "non c'è più" non si mostrano agli altri: vengono verificati a parte. Tutto avviene in forma anonima (vedi Dati e privacy).</p>
+
+<h3>"C'è ancora?"</h3>
+<p>Quando passi dove un altro utente ha segnalato qualcosa di temporaneo (controllo mobile, posto di blocco, incidente, traffico, strada chiusa, pericolo), l'app ti chiede se c'è ancora, con due tasti grandi <b>Sì</b> e <b>No</b>. Le risposte tengono la mappa aggiornata: se più persone dicono che non c'è più, la segnalazione sparisce. Per gli autovelox fissi, i Tutor e le altre cose fisse non viene chiesta nessuna conferma agli altri utenti: vengono verificati a parte.</p>
 
 <h2 id="vicino-it">11. Cerca nelle vicinanze</h2>
 <p><b class="t">Menu</b> › <b class="t">Cerca nelle vicinanze</b>: <b>Benzinai</b> (con carburanti disponibili, GPL, metano...), <b>Colonnine di ricarica</b> (con tipo di presa), <b>Parcheggi</b>, <b>Aree di servizio</b>. L'elenco è ordinato per distanza da te; tocca una voce per vederla sulla mappa e calcolare il percorso. La prima volta l'app chiede di scaricare un piccolo file (circa 15 MB); poi funziona offline e si aggiorna da sola con il Wi-Fi.</p>
@@ -236,8 +244,8 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 
 <h2 id="privacy-it">17. Dati e privacy</h2>
 <ul>
-<li>I percorsi, la ricerca e le mappe sono sul telefono: la tua posizione <b>non viene inviata</b> a nessuno per navigare.</li>
-<li>Quando <b>segnali</b> qualcosa, viene inviato solo: tipo di segnalazione, il punto e l'ora. Non viene salvato il tuo indirizzo IP né il tuo nome: solo un codice anonimo che cambia ogni mese, usato per contare quante persone diverse confermano la stessa cosa.</li>
+<li>Con le mappe scaricate la tua posizione <b>non viene inviata</b> a nessuno. Con i servizi online (percorsi, ricerca, mappa, distributori) l'app invia al nostro server solo ciò che serve per rispondere: punti di partenza e arrivo o il testo cercato. Non c'è un account e il server non salva queste richieste né le collega a te.</li>
+<li>Quando <b>segnali</b> qualcosa, viene inviato solo: tipo di segnalazione, il punto e l'ora. Non viene salvato il tuo indirizzo IP né il tuo nome.</li>
 <li>Mentre navighi in auto, ogni circa 90 secondi l'app chiede al servizio le segnalazioni vicine a te (serve internet).</li>
 <li>Le tracce e gli itinerari restano nella memoria dell'app, sul tuo telefono. Se li condividi, decidi tu con chi.</li>
 <li>L'app non ha pubblicità e non richiede un account.</li>
@@ -257,7 +265,18 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 </table>
 <p>Se il problema resta, scrivi a <b>info.idq.26@gmail.com</b> dicendo cosa stavi facendo e la versione dell'app (Menu › Informazioni).</p>
 
-<h2 id="crediti-it">19. Crediti</h2>
+<h2 id="online-it">19. Servizi online, ricerca di luoghi e 2D/3D</h2>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/ricerca.mp4"></video><p>Cerca "distributore gasolio" o "pizzeria": i più vicini, con prezzo, distanza e orari.</p></div>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/vista.mp4"></video><p>Da Menu › Impostazioni: mappa in 3D (inclinata) o in 2D (piatta).</p></div>
+<h3>Con internet</h3>
+<p>Senza scaricare nulla, con la connessione l'app usa il nostro server: la mappa, la ricerca degli indirizzi, il calcolo dei percorsi (con limiti di velocità, avvisi e strade chiuse già pronti) e il ricalcolo quando esci dal percorso. Se la rete manca o il server non risponde, passa da sola alle mappe offline scaricate, se le hai.</p>
+<h3>Cerca servizi e negozi</h3>
+<p>Nella barra di ricerca scrivi cosa cerchi: <i>distributore gasolio</i>, <i>distributore benzina</i>, <i>colonnina</i>, <i>ristorante</i>, <i>pizzeria</i>, <i>bar</i>, <i>farmacia</i>, <i>ospedale</i>, <i>parcheggio</i>, <i>bancomat</i>, <i>supermercato</i>, <i>hotel</i>, <i>campeggio</i>... Compaiono i più vicini; se hai già un percorso, quelli lungo il percorso. Per i distributori vedi il prezzo aggiornato (dati aperti del Ministero, self e servito) del carburante scelto. In ogni risultato c'è la distanza dalla tua posizione, in metri o chilometri.</p>
+<h3>Mappa in 2D o 3D</h3>
+<p>Da Menu › Impostazioni attiva o spegni <b>Mappa in 3D (inclinata)</b>: in 3D la mappa è inclinata e i palazzi sono in rilievo; in 2D è piatta. La scelta resta salvata.</p>
+<h3>Mentre navighi</h3>
+<p>L'auto resta ferma al centro dello schermo e si muove la mappa; il percorso è verde. La voce si accende e si spegne da Menu › Impostazioni › Voce delle indicazioni: se è spenta senti solo i bip.</p>
+<h2 id="crediti-it">20. Crediti</h2>
 <ul>
 <li>Dati di mappa: © OpenStreetMap contributors (licenza ODbL).</li>
 <li>Disegno della mappa: MapLibre Native.</li>
@@ -267,6 +286,9 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 </ul>
 <p class="sotto">IDQ Navigator indica la strada ma non sostituisce la prudenza: rispetta sempre il Codice della Strada e la segnaletica, e non usare il telefono mentre guidi.</p>
 
+<script>
+function tema(n){ document.body.className = n ? 'notte' : ''; }
+</script>
 </div>
 <div class="l fz" data-l="en">
 <h1>All features in detail</h1>
@@ -291,7 +313,8 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <a href="#imp-en">16. Settings</a>
 <a href="#privacy-en">17. Data and privacy</a>
 <a href="#prob-en">18. Common problems</a>
-<a href="#crediti-en">19. Credits</a>
+<a href="#online-en">19. Online services, place search and 2D/3D</a>
+<a href="#crediti-en">20. Credits</a>
 </nav>
 
 <h2 id="intro-en">1. What it is and how it works</h2>
@@ -325,7 +348,7 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <p>Tap the <b>microphone</b> on the right of the search bar and say the address.</p>
 <h3>With a long press</h3>
 <p>Long-press a point on the map: it becomes the destination. Useful for places without an address (a car park, a path, a spot at sea).</p>
-<p>As soon as the destination is chosen, the app calculates the route (usually in less than a second) and shows <b>kilometres, duration and arrival time</b>. The route is the blue line.</p>
+<p>As soon as the destination is chosen, the app calculates the route (usually in less than a second) and shows <b>kilometres, duration and arrival time</b>. The route is the green line.</p>
 
 <h2 id="partenza-en">5. Choosing another starting point</h2>
 <p>By default you start from your GPS position. To plan a distant route (for example from home while you are elsewhere): <b class="t">Menu</b> › <b class="t">Route</b> › <b class="t">Choose another starting point</b>, then search or long-press on the map. The route is calculated from that point. To really drive with <b class="t">Start</b> the start must go back to the GPS: <b class="t">Start: back to GPS</b>.</p>
@@ -341,6 +364,7 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <p>With a destination chosen, <b class="t">Menu</b> › <b class="t">Route</b> › <b class="t">Intermediate stops</b> lets you add <b>as many stops as you like</b>: tap <b>Add stop</b>, then search for a place or long-press on the map. In the list you can move stops with ▲ ▼ or remove them with ✕: the route is recalculated by itself. On the map the stops are numbered and, while driving, at each stop the voice says you have arrived and then continues to the next one. Stops are saved with the route.</p>
 
 <h2 id="nav-en">7. Navigating</h2>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/navigazione.mp4"></video><p>Navigation: the car stays in the centre and the map moves; green route, limits, alerts and voice.</p></div>
 <h3>Start, Stop</h3>
 <ul>
 <li><b class="t">▶ Start</b>: real navigation with the GPS.</li>
@@ -390,16 +414,22 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <p><b class="t">Menu</b> › <b class="t">Map alerts</b>: one check mark for each type. Off = no symbol and no alert. On foot and by bike the alerts meant for cars do not appear.</p>
 
 <h2 id="segnala-en">10. Reporting an alert</h2>
-<p>You help other drivers, and they help you. While navigating there is the round <b>camera</b> button (orange): tap it and choose:</p>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/segnala.mp4"></video><p>The Report button with big buttons, and the "is it still there?" question when you pass another user's report.</p></div>
+<p>You help other drivers, and they help you. While driving, at the bottom right, there is the <b>Report</b> button: tap it and a panel with <b>big buttons</b> appears, easy to read and to tap. <b>Checkpoint</b> and <b>Fixed speed camera</b> are at the top, highlighted; below you find:</p>
 <ul>
-<li>Fixed speed camera (missing from the map)</li>
 <li>Mobile check</li>
-<li>Section control gate (Tutor)</li>
+<li>Accident</li>
+<li>Traffic</li>
+<li>Road blocked (temporary)</li>
+<li>Hazard on the road</li>
+<li>Tutor gate</li>
 <li>Speed camera that is <b>no longer there</b></li>
-<li>Accident · Traffic · Road closed · Hazard on the road</li>
 </ul>
-<p>You can also report when stopped: <b class="t">Menu</b> › <b class="t">Report</b>. The report takes your position at that moment. If there is no internet, it stays in the phone and is sent by itself as soon as the network returns.</p>
-<p>Reports of fixed speed cameras, Tutor and "no longer there" enter the data only if confirmed by several different people; mobile checks, accidents, traffic, closures and hazards are visible to others immediately, for a limited time. Everything is anonymous (see Data and privacy).</p>
+<p>You can also report while stopped: <b class="t">Menu</b> › <b class="t">Report</b>. The report takes your position at that moment. If there is no internet it stays on the phone and is sent by itself as soon as the network is back.</p>
+<p>Mobile checks, checkpoints, accidents, traffic, blocked roads and hazards are visible to others immediately, for a limited time. Fixed speed cameras, Tutor and "no longer there" are not shown to others: they are checked separately. Everything is anonymous (see Data and privacy).</p>
+
+<h3>"Is it still there?"</h3>
+<p>When you pass where another user reported something temporary (mobile check, checkpoint, accident, traffic, closed road, hazard), the app asks whether it is still there, with two big buttons <b>Yes</b> and <b>No</b>. The answers keep the map up to date: if more people say it is gone, the report disappears. For fixed speed cameras, Tutor and other fixed things, other users are not asked for confirmation: they are checked separately.</p>
 
 <h2 id="vicino-en">11. Search nearby</h2>
 <p><b class="t">Menu</b> › <b class="t">Search nearby</b>: <b>Petrol stations</b> (with available fuels, LPG, methane...), <b>Charging points</b> (with connector type), <b>Car parks</b>, <b>Service areas</b>. The list is sorted by distance from you; tap an item to see it on the map and calculate the route. The first time the app asks to download a small file (about 15 MB); after that it works offline and updates itself on Wi-Fi.</p>
@@ -464,7 +494,7 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 
 <h2 id="privacy-en">17. Data and privacy</h2>
 <ul>
-<li>Routes, search and maps are on the phone: your position is <b>not sent</b> to anyone in order to navigate.</li>
+<li>With downloaded maps your position is <b>not sent</b> to anyone. With the online services (routes, search, map, fuel stations) the app sends our server only what is needed to answer: start and destination points or the searched text. There is no account and the server does not store these requests or link them to you.</li>
 <li>When you <b>report</b> something, only this is sent: type of report, the point and the time. Your IP address and your name are not stored: only an anonymous code that changes every month, used to count how many different people confirm the same thing.</li>
 <li>While navigating by car, about every 90 seconds the app asks the service for reports near you (internet needed).</li>
 <li>Tracks and routes stay in the app's memory, on your phone. If you share them, you decide with whom.</li>
@@ -485,7 +515,18 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 </table>
 <p>If the problem remains, write to <b>info.idq.26@gmail.com</b> saying what you were doing and the app version (Menu › About).</p>
 
-<h2 id="crediti-en">19. Credits</h2>
+<h2 id="online-en">19. Online services, place search and 2D/3D</h2>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/ricerca.mp4"></video><p>Search "diesel station" or "pizzeria": the nearest ones, with price, distance and opening hours.</p></div>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/vista.mp4"></video><p>From Menu › Settings: 3D (tilted) or 2D (flat) map.</p></div>
+<h3>With internet</h3>
+<p>Without downloading anything, when you are online the app uses our server: the map, address search, route calculation (with speed limits, alerts and closed roads already included) and rerouting when you leave the route. If there is no network or the server does not answer, the app switches by itself to the offline maps you downloaded, if you have them.</p>
+<h3>Search for services and shops</h3>
+<p>Type what you are looking for in the search bar: <i>diesel station</i>, <i>petrol station</i>, <i>charging point</i>, <i>restaurant</i>, <i>pizzeria</i>, <i>bar</i>, <i>pharmacy</i>, <i>hospital</i>, <i>parking</i>, <i>ATM</i>, <i>supermarket</i>, <i>hotel</i>, <i>campsite</i>... The nearest ones appear; if you already have a route, the ones along the route. For fuel stations you see the updated price (Italian Ministry open data, self-service and served) of the chosen fuel. Every result shows its distance from your position, in metres or kilometres.</p>
+<h3>2D or 3D map</h3>
+<p>In Menu › Settings turn <b>3D map (tilted)</b> on or off: in 3D the map is tilted and buildings are raised; in 2D it is flat. Your choice is saved.</p>
+<h3>While navigating</h3>
+<p>The car stays still at the centre of the screen and the map moves; the route is green. Voice guidance is turned on and off in Menu › Settings › Voice guidance: when it is off you only hear beeps.</p>
+<h2 id="crediti-en">20. Credits</h2>
 <ul>
 <li>Map data: © OpenStreetMap contributors (ODbL licence).</li>
 <li>Map rendering: MapLibre Native.</li>
@@ -495,6 +536,9 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 </ul>
 <p class="sotto">IDQ Navigator shows the way but does not replace caution: always follow the Highway Code and road signs, and do not use the phone while driving.</p>
 
+<script>
+function tema(n){ document.body.className = n ? 'notte' : ''; }
+</script>
 </div>
 <div class="l fz" data-l="fr">
 <h1>Toutes les fonctions en détail</h1>
@@ -519,7 +563,8 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <a href="#imp-fr">16. Paramètres</a>
 <a href="#privacy-fr">17. Données et confidentialité</a>
 <a href="#prob-fr">18. Problèmes courants</a>
-<a href="#crediti-fr">19. Crédits</a>
+<a href="#online-fr">19. Services en ligne, recherche de lieux et 2D/3D</a>
+<a href="#crediti-fr">20. Crédits</a>
 </nav>
 
 <h2 id="intro-fr">1. Ce que c'est et comment ça marche</h2>
@@ -553,7 +598,7 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <p>Touchez le <b>micro</b> à droite de la barre de recherche et dites l'adresse.</p>
 <h3>Avec l'appui long</h3>
 <p>Faites un appui long sur un point de la carte : il devient la destination. Utile pour les endroits sans adresse (un parking, un sentier, un point en mer).</p>
-<p>Dès que la destination est choisie, l'application calcule l'itinéraire (en général en moins d'une seconde) et affiche <b>les kilomètres, la durée et l'heure d'arrivée</b>. L'itinéraire est la ligne bleue.</p>
+<p>Dès que la destination est choisie, l'application calcule l'itinéraire (en général en moins d'une seconde) et affiche <b>les kilomètres, la durée et l'heure d'arrivée</b>. L'itinéraire est la ligne verte.</p>
 
 <h2 id="partenza-fr">5. Choisir un autre départ</h2>
 <p>Par défaut, vous partez de votre position GPS. Pour planifier un itinéraire éloigné (par exemple depuis chez vous alors que vous êtes ailleurs) : <b class="t">Menu</b> › <b class="t">Itinéraire</b> › <b class="t">Choisir un autre départ</b>, puis recherchez ou faites un appui long sur la carte. L'itinéraire est calculé depuis ce point. Pour rouler vraiment avec <b class="t">Démarrer</b>, le départ doit revenir au GPS : <b class="t">Départ : revenir au GPS</b>.</p>
@@ -569,6 +614,7 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <p>Une destination choisie, <b class="t">Menu</b> › <b class="t">Itinéraire</b> › <b class="t">Étapes intermédiaires</b> permet d'ajouter <b>autant d'étapes que vous voulez</b> : touchez <b>Ajouter une étape</b>, puis cherchez un lieu ou faites un appui long sur la carte. Dans la liste, vous pouvez déplacer les étapes avec ▲ ▼ ou les supprimer avec ✕ : l'itinéraire se recalcule tout seul. Sur la carte, les étapes sont numérotées et, en conduisant, à chaque étape la voix dit que vous êtes arrivé puis repart vers la suivante. Les étapes sont enregistrées avec l'itinéraire.</p>
 
 <h2 id="nav-fr">7. Naviguer</h2>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/navigazione.mp4"></video><p>La navigation : la voiture reste au centre et la carte bouge ; itinéraire vert, limites, alertes et voix.</p></div>
 <h3>Démarrer, Terminer</h3>
 <ul>
 <li><b class="t">▶ Démarrer</b> : navigation réelle avec le GPS.</li>
@@ -618,16 +664,22 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <p><b class="t">Menu</b> › <b class="t">Alertes sur la carte</b> : une case pour chaque type. Désactivé = ni symbole ni alerte. À pied et à vélo, les alertes prévues pour les voitures n'apparaissent pas.</p>
 
 <h2 id="segnala-fr">10. Signaler une alerte</h2>
-<p>Vous aidez les autres conducteurs, et ils vous aident. Pendant la navigation, il y a le bouton rond avec l'<b>appareil photo</b> (orange) : touchez-le et choisissez :</p>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/segnala.mp4"></video><p>Le bouton Signaler avec de grands boutons, et la question « est-il toujours là ? » quand vous passez près d'un signalement.</p></div>
+<p>Vous aidez les autres conducteurs, et ils vous aident. Pendant la conduite, en bas à droite, il y a le bouton <b>Signaler</b> : touchez-le et un panneau avec de <b>grands boutons</b> apparaît, faciles à lire et à toucher. <b>Contrôle routier</b> et <b>Radar fixe</b> sont en haut, en évidence ; en dessous vous trouvez :</p>
 <ul>
-<li>Radar fixe (absent de la carte)</li>
 <li>Contrôle mobile</li>
+<li>Accident</li>
+<li>Trafic</li>
+<li>Route bloquée (temporaire)</li>
+<li>Danger sur la route</li>
 <li>Portique Tutor</li>
-<li>Radar qui n'<b>existe plus</b></li>
-<li>Accident · Trafic · Route fermée · Danger sur la route</li>
+<li>Radar qui <b>n'existe plus</b></li>
 </ul>
-<p>On peut aussi signaler à l'arrêt : <b class="t">Menu</b> › <b class="t">Signaler</b>. Le signalement prend votre position du moment. S'il n'y a pas d'internet, il reste dans le téléphone et part tout seul dès le retour du réseau.</p>
-<p>Les signalements de radars fixes, de Tutor et « n'existe plus » n'entrent dans les données que s'ils sont confirmés par plusieurs personnes différentes ; les contrôles mobiles, accidents, trafic, fermetures et dangers sont visibles tout de suite pour les autres, pendant une durée limitée. Tout est anonyme (voir Données et confidentialité).</p>
+<p>Vous pouvez aussi signaler à l'arrêt : <b class="t">Menu</b> › <b class="t">Signaler</b>. Le signalement prend votre position du moment. S'il n'y a pas internet, il reste sur le téléphone et part tout seul dès que le réseau revient.</p>
+<p>Contrôles mobiles, contrôles routiers, accidents, trafic, routes bloquées et dangers sont visibles tout de suite par les autres, pour un temps limité. Les radars fixes, les Tutor et « n'existe plus » ne sont pas montrés aux autres : ils sont vérifiés à part. Tout est anonyme (voir Données et confidentialité).</p>
+
+<h3>« Est-il toujours là ? »</h3>
+<p>Quand vous passez là où un autre utilisateur a signalé quelque chose de temporaire (contrôle mobile, contrôle routier, accident, trafic, route fermée, danger), l'application demande s'il y est toujours, avec deux grands boutons <b>Oui</b> et <b>Non</b>. Les réponses maintiennent la carte à jour : si plusieurs personnes disent qu'il n'y est plus, le signalement disparaît. Pour les radars fixes, les Tutor et les autres éléments fixes, aucune confirmation n'est demandée aux autres utilisateurs : ils sont vérifiés à part.</p>
 
 <h2 id="vicino-fr">11. Rechercher à proximité</h2>
 <p><b class="t">Menu</b> › <b class="t">Rechercher à proximité</b> : <b>Stations-service</b> (avec les carburants disponibles, GPL, méthane...), <b>Bornes de recharge</b> (avec le type de prise), <b>Parkings</b>, <b>Aires de service</b>. La liste est classée par distance ; touchez un élément pour le voir sur la carte et calculer l'itinéraire. La première fois, l'application demande de télécharger un petit fichier (environ 15 Mo) ; ensuite elle fonctionne hors ligne et se met à jour toute seule en Wi-Fi.</p>
@@ -692,7 +744,7 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 
 <h2 id="privacy-fr">17. Données et confidentialité</h2>
 <ul>
-<li>Les itinéraires, la recherche et les cartes sont sur le téléphone : votre position n'est <b>envoyée à personne</b> pour naviguer.</li>
+<li>Avec les cartes téléchargées, votre position n'est <b>envoyée à personne</b>. Avec les services en ligne (itinéraires, recherche, carte, stations-service), l'application envoie à notre serveur uniquement ce qui est nécessaire pour répondre : points de départ et d'arrivée ou texte recherché. Il n'y a pas de compte et le serveur ne conserve pas ces requêtes ni ne les relie à vous.</li>
 <li>Quand vous <b>signalez</b> quelque chose, seuls sont envoyés : le type de signalement, le point et l'heure. Votre adresse IP et votre nom ne sont pas enregistrés : seulement un code anonyme qui change chaque mois, utilisé pour compter combien de personnes différentes confirment la même chose.</li>
 <li>Pendant la navigation en voiture, environ toutes les 90 secondes, l'application demande au service les signalements proches de vous (internet nécessaire).</li>
 <li>Les traces et les itinéraires restent dans la mémoire de l'application, sur votre téléphone. Si vous les partagez, c'est vous qui décidez avec qui.</li>
@@ -713,7 +765,18 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 </table>
 <p>Si le problème persiste, écrivez à <b>info.idq.26@gmail.com</b> en précisant ce que vous faisiez et la version de l'application (Menu › À propos).</p>
 
-<h2 id="crediti-fr">19. Crédits</h2>
+<h2 id="online-fr">19. Services en ligne, recherche de lieux et 2D/3D</h2>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/ricerca.mp4"></video><p>Cherchez « station gazole » ou « pizzeria » : les plus proches, avec prix, distance et horaires.</p></div>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/vista.mp4"></video><p>Dans Menu › Réglages : carte en 3D (inclinée) ou en 2D (plate).</p></div>
+<h3>Avec internet</h3>
+<p>Sans rien télécharger, quand vous êtes connecté l'application utilise notre serveur : la carte, la recherche d'adresses, le calcul des itinéraires (avec limites de vitesse, alertes et routes fermées déjà inclus) et le recalcul quand vous quittez l'itinéraire. Sans réseau ou si le serveur ne répond pas, l'application passe toute seule aux cartes hors ligne téléchargées, si vous en avez.</p>
+<h3>Chercher des services et des commerces</h3>
+<p>Dans la barre de recherche, écrivez ce que vous cherchez : <i>station gazole</i>, <i>station essence</i>, <i>borne de recharge</i>, <i>restaurant</i>, <i>pizzeria</i>, <i>bar</i>, <i>pharmacie</i>, <i>hôpital</i>, <i>parking</i>, <i>distributeur de billets</i>, <i>supermarché</i>, <i>hôtel</i>, <i>camping</i>... Les plus proches apparaissent ; si vous avez déjà un itinéraire, ceux situés le long de l'itinéraire. Pour les stations-service, vous voyez le prix à jour (données ouvertes du ministère italien, self et servi) du carburant choisi. Chaque résultat indique sa distance depuis votre position, en mètres ou kilomètres.</p>
+<h3>Carte en 2D ou 3D</h3>
+<p>Dans Menu › Réglages, activez ou désactivez <b>Carte en 3D (inclinée)</b> : en 3D la carte est inclinée et les bâtiments sont en relief ; en 2D elle est plate. Votre choix est enregistré.</p>
+<h3>Pendant la navigation</h3>
+<p>La voiture reste immobile au centre de l'écran et c'est la carte qui bouge ; l'itinéraire est vert. Le guidage vocal s'active et se désactive dans Menu › Réglages › Guidage vocal : s'il est désactivé, vous n'entendez que des bips.</p>
+<h2 id="crediti-fr">20. Crédits</h2>
 <ul>
 <li>Données cartographiques : © OpenStreetMap contributors (licence ODbL).</li>
 <li>Affichage de la carte : MapLibre Native.</li>
@@ -723,6 +786,9 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 </ul>
 <p class="sotto">IDQ Navigator indique la route mais ne remplace pas la prudence : respectez toujours le code de la route et la signalisation, et n'utilisez pas le téléphone en conduisant.</p>
 
+<script>
+function tema(n){ document.body.className = n ? 'notte' : ''; }
+</script>
 </div>
 <div class="l fz" data-l="de">
 <h1>Alle Funktionen im Detail</h1>
@@ -747,7 +813,8 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <a href="#imp-de">16. Einstellungen</a>
 <a href="#privacy-de">17. Daten und Datenschutz</a>
 <a href="#prob-de">18. Häufige Probleme</a>
-<a href="#crediti-de">19. Danksagungen</a>
+<a href="#online-de">19. Online-Dienste, Ortssuche und 2D/3D</a>
+<a href="#crediti-de">20. Danksagungen</a>
 </nav>
 
 <h2 id="intro-de">1. Was es ist und wie es funktioniert</h2>
@@ -781,7 +848,7 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <p>Tippen Sie rechts in der Suchleiste auf das <b>Mikrofon</b> und sagen Sie die Adresse.</p>
 <h3>Mit langem Tippen</h3>
 <p>Tippen Sie lange auf einen Punkt der Karte: Er wird zum Ziel. Praktisch für Orte ohne Adresse (ein Parkplatz, ein Pfad, ein Punkt auf dem Meer).</p>
-<p>Sobald das Ziel gewählt ist, berechnet die App die Route (meist in weniger als einer Sekunde) und zeigt <b>Kilometer, Dauer und Ankunftszeit</b>. Die Route ist die blaue Linie.</p>
+<p>Sobald das Ziel gewählt ist, berechnet die App die Route (meist in weniger als einer Sekunde) und zeigt <b>Kilometer, Dauer und Ankunftszeit</b>. Die Route ist die grüne Linie.</p>
 
 <h2 id="partenza-de">5. Einen anderen Start wählen</h2>
 <p>Standardmäßig starten Sie von Ihrer GPS-Position. Um eine entfernte Route zu planen (zum Beispiel von zu Hause aus, während Sie woanders sind): <b class="t">Menü</b> › <b class="t">Route</b> › <b class="t">Anderen Startpunkt wählen</b>, dann suchen oder lange auf die Karte tippen. Die Route wird von diesem Punkt berechnet. Um mit <b class="t">Start</b> wirklich zu fahren, muss der Start wieder das GPS sein: <b class="t">Start: zurück zum GPS</b>.</p>
@@ -797,6 +864,7 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <p>Ist ein Ziel gewählt, können Sie unter <b class="t">Menü</b> › <b class="t">Route</b> › <b class="t">Zwischenstopps</b> <b>beliebig viele Zwischenstopps</b> hinzufügen: Tippen Sie auf <b>Zwischenstopp hinzufügen</b>, dann einen Ort suchen oder lange auf die Karte tippen. In der Liste verschieben Sie die Stopps mit ▲ ▼ oder entfernen sie mit ✕: Die Route wird von selbst neu berechnet. Auf der Karte sind die Stopps nummeriert, und beim Fahren sagt die Stimme bei jedem Stopp, dass Sie angekommen sind, und führt dann zum nächsten. Die Stopps werden mit der Route gespeichert.</p>
 
 <h2 id="nav-de">7. Navigieren</h2>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/navigazione.mp4"></video><p>Die Navigation: Das Auto bleibt in der Mitte und die Karte bewegt sich; grüne Route, Limits, Hinweise und Sprache.</p></div>
 <h3>Start, Beenden</h3>
 <ul>
 <li><b class="t">▶ Start</b>: echte Navigation mit dem GPS.</li>
@@ -846,16 +914,22 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <p><b class="t">Menü</b> › <b class="t">Hinweise auf der Karte</b>: ein Häkchen für jede Art. Aus = kein Symbol und keine Warnung. Zu Fuß und mit dem Fahrrad erscheinen die für Autos gedachten Hinweise nicht.</p>
 
 <h2 id="segnala-de">10. Einen Hinweis melden</h2>
-<p>Sie helfen anderen Fahrern, und sie helfen Ihnen. Während der Navigation gibt es den runden Knopf mit der <b>Kamera</b> (orange): Tippen Sie darauf und wählen Sie:</p>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/segnala.mp4"></video><p>Die Schaltfläche Melden mit großen Tasten und die Frage "ist sie noch da?", wenn Sie an einer Meldung vorbeikommen.</p></div>
+<p>Sie helfen anderen Fahrern, und sie helfen Ihnen. Beim Fahren finden Sie unten rechts die Schaltfläche <b>Melden</b>: Tippen Sie darauf und es erscheint eine Tafel mit <b>großen Tasten</b>, leicht zu lesen und zu treffen. <b>Kontrollstelle</b> und <b>Fester Blitzer</b> stehen oben, hervorgehoben; darunter finden Sie:</p>
 <ul>
-<li>Fester Blitzer (fehlt auf der Karte)</li>
 <li>Mobile Kontrolle</li>
+<li>Unfall</li>
+<li>Verkehr</li>
+<li>Straße gesperrt (vorübergehend)</li>
+<li>Gefahr auf der Straße</li>
 <li>Tutor-Portal</li>
-<li>Blitzer, der <b>nicht mehr da ist</b></li>
-<li>Unfall · Verkehr · Straße gesperrt · Gefahr auf der Straße</li>
+<li>Blitzer, den es <b>nicht mehr gibt</b></li>
 </ul>
-<p>Man kann auch im Stand melden: <b class="t">Menü</b> › <b class="t">Melden</b>. Die Meldung übernimmt Ihre aktuelle Position. Gibt es kein Internet, bleibt sie im Telefon und wird von selbst gesendet, sobald das Netz zurück ist.</p>
-<p>Meldungen von festen Blitzern, Tutor und „nicht mehr da“ gelangen nur in die Daten, wenn mehrere verschiedene Personen sie bestätigen; mobile Kontrollen, Unfälle, Verkehr, Sperrungen und Gefahren sind für andere sofort und für begrenzte Zeit sichtbar. Alles geschieht anonym (siehe Daten und Datenschutz).</p>
+<p>Sie können auch im Stand melden: <b class="t">Menü</b> › <b class="t">Melden</b>. Die Meldung nimmt Ihre Position im Moment. Ohne Internet bleibt sie auf dem Telefon und wird von selbst gesendet, sobald das Netz wieder da ist.</p>
+<p>Mobile Kontrollen, Kontrollstellen, Unfälle, Verkehr, gesperrte Straßen und Gefahren sind für andere sofort sichtbar, für begrenzte Zeit. Feste Blitzer, Tutor und „gibt es nicht mehr“ werden anderen nicht angezeigt: Sie werden gesondert geprüft. Alles geschieht anonym (siehe Daten und Datenschutz).</p>
+
+<h3>„Ist sie noch da?“</h3>
+<p>Wenn Sie dort vorbeikommen, wo ein anderer Nutzer etwas Vorübergehendes gemeldet hat (mobile Kontrolle, Kontrollstelle, Unfall, Stau, Sperrung, Gefahr), fragt die App, ob es noch da ist, mit zwei großen Tasten <b>Ja</b> und <b>Nein</b>. Die Antworten halten die Karte aktuell: sagen mehrere, dass es weg ist, verschwindet die Meldung. Bei festen Blitzern, Tutor und anderen festen Dingen wird keine Bestätigung abgefragt: Sie werden gesondert geprüft.</p>
 
 <h2 id="vicino-de">11. In der Nähe suchen</h2>
 <p><b class="t">Menü</b> › <b class="t">In der Nähe suchen</b>: <b>Tankstellen</b> (mit verfügbaren Kraftstoffen, LPG, Methan...), <b>Ladesäulen</b> (mit Steckertyp), <b>Parkplätze</b>, <b>Raststätten</b>. Die Liste ist nach Entfernung sortiert; tippen Sie auf einen Eintrag, um ihn auf der Karte zu sehen und die Route zu berechnen. Beim ersten Mal fragt die App, ob eine kleine Datei (etwa 15 MB) heruntergeladen werden soll; danach funktioniert es offline und aktualisiert sich per WLAN von selbst.</p>
@@ -920,7 +994,7 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 
 <h2 id="privacy-de">17. Daten und Datenschutz</h2>
 <ul>
-<li>Routen, Suche und Karten liegen auf dem Telefon: Ihre Position wird zum Navigieren <b>an niemanden gesendet</b>.</li>
+<li>Mit heruntergeladenen Karten wird Ihre Position <b>an niemanden gesendet</b>. Bei den Online-Diensten (Routen, Suche, Karte, Tankstellen) sendet die App an unseren Server nur, was zur Antwort nötig ist: Start- und Zielpunkte oder den gesuchten Text. Es gibt kein Konto, und der Server speichert diese Anfragen nicht und verknüpft sie nicht mit Ihnen.</li>
 <li>Wenn Sie etwas <b>melden</b>, werden nur gesendet: Art der Meldung, der Punkt und die Uhrzeit. Ihre IP-Adresse und Ihr Name werden nicht gespeichert: nur ein anonymer Code, der sich jeden Monat ändert und dazu dient zu zählen, wie viele verschiedene Personen dasselbe bestätigen.</li>
 <li>Beim Navigieren im Auto fragt die App etwa alle 90 Sekunden beim Dienst nach Meldungen in Ihrer Nähe (Internet nötig).</li>
 <li>Tracks und Routen bleiben im Speicher der App auf Ihrem Telefon. Wenn Sie sie teilen, entscheiden Sie, mit wem.</li>
@@ -941,7 +1015,18 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 </table>
 <p>Bleibt das Problem bestehen, schreiben Sie an <b>info.idq.26@gmail.com</b> und nennen Sie, was Sie getan haben, sowie die App-Version (Menü › Info).</p>
 
-<h2 id="crediti-de">19. Danksagungen</h2>
+<h2 id="online-de">19. Online-Dienste, Ortssuche und 2D/3D</h2>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/ricerca.mp4"></video><p>Suchen Sie "Diesel-Tankstelle" oder "Pizzeria": die nächsten, mit Preis, Entfernung und Öffnungszeiten.</p></div>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/vista.mp4"></video><p>Unter Menü › Einstellungen: 3D-Karte (geneigt) oder 2D (flach).</p></div>
+<h3>Mit Internet</h3>
+<p>Ohne etwas herunterzuladen nutzt die App bei bestehender Verbindung unseren Server: die Karte, die Adresssuche, die Routenberechnung (mit Tempolimits, Warnungen und gesperrten Straßen bereits enthalten) und die Neuberechnung, wenn Sie die Route verlassen. Gibt es kein Netz oder antwortet der Server nicht, wechselt die App von selbst zu den heruntergeladenen Offline-Karten, falls vorhanden.</p>
+<h3>Dienste und Geschäfte suchen</h3>
+<p>Geben Sie in der Suchleiste ein, was Sie suchen: <i>Diesel-Tankstelle</i>, <i>Benzin-Tankstelle</i>, <i>Ladesäule</i>, <i>Restaurant</i>, <i>Pizzeria</i>, <i>Bar</i>, <i>Apotheke</i>, <i>Krankenhaus</i>, <i>Parkplatz</i>, <i>Geldautomat</i>, <i>Supermarkt</i>, <i>Hotel</i>, <i>Campingplatz</i>... Die nächstgelegenen erscheinen; wenn Sie schon eine Route haben, die entlang der Route. Bei Tankstellen sehen Sie den aktuellen Preis (offene Daten des italienischen Ministeriums, Selbstbedienung und Bedienung) des gewählten Kraftstoffs. Jedes Ergebnis zeigt die Entfernung von Ihrer Position in Metern oder Kilometern.</p>
+<h3>Karte in 2D oder 3D</h3>
+<p>Unter Menü › Einstellungen schalten Sie <b>3D-Karte (geneigt)</b> ein oder aus: in 3D ist die Karte geneigt und die Gebäude sind plastisch; in 2D ist sie flach. Ihre Wahl wird gespeichert.</p>
+<h3>Während der Navigation</h3>
+<p>Das Auto bleibt in der Bildschirmmitte stehen und die Karte bewegt sich; die Route ist grün. Die Sprachführung schalten Sie unter Menü › Einstellungen › Sprachführung ein und aus: ist sie aus, hören Sie nur Pieptöne.</p>
+<h2 id="crediti-de">20. Danksagungen</h2>
 <ul>
 <li>Kartendaten: © OpenStreetMap contributors (ODbL-Lizenz).</li>
 <li>Kartendarstellung: MapLibre Native.</li>
@@ -951,6 +1036,9 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 </ul>
 <p class="sotto">IDQ Navigator zeigt den Weg, ersetzt aber keine Vorsicht: Beachten Sie immer die Straßenverkehrsordnung und die Beschilderung und benutzen Sie das Telefon nicht beim Fahren.</p>
 
+<script>
+function tema(n){ document.body.className = n ? 'notte' : ''; }
+</script>
 </div>
 <div class="l fz" data-l="es">
 <h1>Todas las funciones en detalle</h1>
@@ -975,7 +1063,8 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <a href="#imp-es">16. Ajustes</a>
 <a href="#privacy-es">17. Datos y privacidad</a>
 <a href="#prob-es">18. Problemas comunes</a>
-<a href="#crediti-es">19. Créditos</a>
+<a href="#online-es">19. Servicios en línea, búsqueda de lugares y 2D/3D</a>
+<a href="#crediti-es">20. Créditos</a>
 </nav>
 
 <h2 id="intro-es">1. Qué es y cómo funciona</h2>
@@ -1009,7 +1098,7 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <p>Toca el <b>micrófono</b> a la derecha de la barra de búsqueda y di la dirección.</p>
 <h3>Con la pulsación larga</h3>
 <p>Mantén pulsado un punto del mapa: se convierte en el destino. Útil para sitios sin dirección (un aparcamiento, un sendero, un punto en el mar).</p>
-<p>En cuanto se elige el destino, la app calcula la ruta (normalmente en menos de un segundo) y muestra <b>kilómetros, duración y hora de llegada</b>. La ruta es la línea azul.</p>
+<p>En cuanto se elige el destino, la app calcula la ruta (normalmente en menos de un segundo) y muestra <b>kilómetros, duración y hora de llegada</b>. La ruta es la línea verde.</p>
 
 <h2 id="partenza-es">5. Elegir otra salida</h2>
 <p>Por defecto se sale de tu posición GPS. Para planificar una ruta lejana (por ejemplo desde casa mientras estás en otro sitio): <b class="t">Menú</b> › <b class="t">Ruta</b> › <b class="t">Elegir otro punto de salida</b>, luego busca o mantén pulsado en el mapa. La ruta se calcula desde ese punto. Para conducir de verdad con <b class="t">Iniciar</b> la salida debe volver al GPS: <b class="t">Salida: volver al GPS</b>.</p>
@@ -1025,6 +1114,7 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <p>Con un destino elegido, <b class="t">Menú</b> › <b class="t">Ruta</b> › <b class="t">Paradas intermedias</b> permite añadir <b>todas las paradas que quieras</b>: toca <b>Añadir parada</b>, luego busca un lugar o mantén pulsado en el mapa. En la lista puedes mover las paradas con ▲ ▼ o quitarlas con ✕: la ruta se recalcula sola. En el mapa las paradas están numeradas y, mientras conduces, en cada parada la voz dice que has llegado y luego continúa hacia la siguiente. Las paradas se guardan con la ruta.</p>
 
 <h2 id="nav-es">7. Navegar</h2>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/navigazione.mp4"></video><p>La navegación: el coche se queda en el centro y se mueve el mapa; ruta verde, límites, avisos y voz.</p></div>
 <h3>Iniciar, Terminar</h3>
 <ul>
 <li><b class="t">▶ Iniciar</b>: navegación real con el GPS.</li>
@@ -1074,16 +1164,22 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 <p><b class="t">Menú</b> › <b class="t">Avisos en el mapa</b>: una casilla por cada tipo. Apagado = sin símbolo y sin aviso. A pie y en bici no aparecen los avisos pensados para coches.</p>
 
 <h2 id="segnala-es">10. Informar de un aviso</h2>
-<p>Ayudas a otros conductores, y ellos te ayudan a ti. Mientras navegas está el botón redondo con la <b>cámara</b> (naranja): tócalo y elige:</p>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/segnala.mp4"></video><p>El botón Avisar con botones grandes y la pregunta "¿sigue ahí?" al pasar por un aviso de otro usuario.</p></div>
+<p>Ayudas a otros conductores, y ellos te ayudan a ti. Mientras conduces, abajo a la derecha, está el botón <b>Avisar</b>: tócalo y aparece un panel con <b>botones grandes</b>, fáciles de leer y de tocar. <b>Control policial</b> y <b>Radar fijo</b> están arriba, destacados; debajo encuentras:</p>
 <ul>
-<li>Radar fijo (que falta en el mapa)</li>
 <li>Control móvil</li>
+<li>Accidente</li>
+<li>Tráfico</li>
+<li>Carretera cortada (temporal)</li>
+<li>Peligro en la carretera</li>
 <li>Pórtico Tutor</li>
 <li>Radar que <b>ya no está</b></li>
-<li>Accidente · Tráfico · Carretera cortada · Peligro en la carretera</li>
 </ul>
-<p>También se puede avisar estando parado: <b class="t">Menú</b> › <b class="t">Informar</b>. El aviso toma tu posición del momento. Si no hay internet, se queda en el teléfono y sale solo en cuanto vuelve la red.</p>
-<p>Los avisos de radares fijos, Tutor y "ya no está" entran en los datos solo si los confirman varias personas distintas; los controles móviles, accidentes, tráfico, cortes y peligros los ven los demás enseguida, durante un tiempo limitado. Todo es anónimo (ver Datos y privacidad).</p>
+<p>También puedes avisar parado: <b class="t">Menú</b> › <b class="t">Avisar</b>. El aviso toma tu posición del momento. Si no hay internet, se queda en el teléfono y se envía solo en cuanto vuelve la red.</p>
+<p>Controles móviles, controles policiales, accidentes, tráfico, carreteras cortadas y peligros son visibles para los demás enseguida, durante un tiempo limitado. Los radares fijos, los Tutor y "ya no está" no se muestran a los demás: se comprueban aparte. Todo es anónimo (ver Datos y privacidad).</p>
+
+<h3>«¿Sigue ahí?»</h3>
+<p>Cuando pasas por donde otro usuario avisó de algo temporal (control móvil, control policial, accidente, tráfico, carretera cortada, peligro), la app pregunta si sigue ahí, con dos botones grandes <b>Sí</b> y <b>No</b>. Las respuestas mantienen el mapa al día: si varias personas dicen que ya no está, el aviso desaparece. En radares fijos, Tutor y otras cosas fijas no se pide confirmación a los demás usuarios: se comprueban aparte.</p>
 
 <h2 id="vicino-es">11. Buscar cerca</h2>
 <p><b class="t">Menú</b> › <b class="t">Buscar cerca</b>: <b>Gasolineras</b> (con los carburantes disponibles, GLP, metano...), <b>Puntos de carga</b> (con tipo de enchufe), <b>Aparcamientos</b>, <b>Áreas de servicio</b>. La lista se ordena por distancia; toca un elemento para verlo en el mapa y calcular la ruta. La primera vez la app pide descargar un archivo pequeño (unos 15 MB); después funciona sin conexión y se actualiza sola con Wi-Fi.</p>
@@ -1148,7 +1244,7 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 
 <h2 id="privacy-es">17. Datos y privacidad</h2>
 <ul>
-<li>Las rutas, la búsqueda y los mapas están en el teléfono: tu posición <b>no se envía</b> a nadie para navegar.</li>
+<li>Con los mapas descargados tu posición <b>no se envía</b> a nadie. Con los servicios en línea (rutas, búsqueda, mapa, gasolineras) la app envía a nuestro servidor solo lo necesario para responder: puntos de salida y llegada o el texto buscado. No hay cuenta y el servidor no guarda estas peticiones ni las vincula a ti.</li>
 <li>Cuando <b>informas</b> de algo, solo se envía: tipo de aviso, el punto y la hora. No se guarda tu dirección IP ni tu nombre: solo un código anónimo que cambia cada mes, usado para contar cuántas personas distintas confirman lo mismo.</li>
 <li>Mientras navegas en coche, cada unos 90 segundos la app pide al servicio los avisos cercanos a ti (hace falta internet).</li>
 <li>Los tracks y las rutas se quedan en la memoria de la app, en tu teléfono. Si los compartes, decides tú con quién.</li>
@@ -1169,7 +1265,18 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 </table>
 <p>Si el problema continúa, escribe a <b>info.idq.26@gmail.com</b> indicando qué estabas haciendo y la versión de la app (Menú › Información).</p>
 
-<h2 id="crediti-es">19. Créditos</h2>
+<h2 id="online-es">19. Servicios en línea, búsqueda de lugares y 2D/3D</h2>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/ricerca.mp4"></video><p>Busca "gasolinera diésel" o "pizzería": los más cercanos, con precio, distancia y horario.</p></div>
+<div class="vid"><video controls muted playsinline preload="metadata" src="video/vista.mp4"></video><p>En Menú › Ajustes: mapa en 3D (inclinado) o en 2D (plano).</p></div>
+<h3>Con internet</h3>
+<p>Sin descargar nada, cuando hay conexión la app usa nuestro servidor: el mapa, la búsqueda de direcciones, el cálculo de rutas (con límites de velocidad, avisos y calles cortadas ya incluidos) y el recálculo cuando sales de la ruta. Si no hay red o el servidor no responde, la app pasa sola a los mapas sin conexión descargados, si los tienes.</p>
+<h3>Buscar servicios y tiendas</h3>
+<p>En la barra de búsqueda escribe lo que buscas: <i>gasolinera diésel</i>, <i>gasolinera gasolina</i>, <i>punto de carga</i>, <i>restaurante</i>, <i>pizzería</i>, <i>bar</i>, <i>farmacia</i>, <i>hospital</i>, <i>aparcamiento</i>, <i>cajero</i>, <i>supermercado</i>, <i>hotel</i>, <i>camping</i>... Aparecen los más cercanos; si ya tienes una ruta, los que están a lo largo de la ruta. En las gasolineras ves el precio actualizado (datos abiertos del Ministerio italiano, autoservicio y servido) del combustible elegido. Cada resultado indica su distancia desde tu posición, en metros o kilómetros.</p>
+<h3>Mapa en 2D o 3D</h3>
+<p>En Menú › Ajustes activa o desactiva <b>Mapa en 3D (inclinado)</b>: en 3D el mapa está inclinado y los edificios en relieve; en 2D es plano. Tu elección se guarda.</p>
+<h3>Mientras navegas</h3>
+<p>El coche se queda quieto en el centro de la pantalla y se mueve el mapa; la ruta es verde. La guía por voz se activa y desactiva en Menú › Ajustes › Guía por voz: si está desactivada solo oyes pitidos.</p>
+<h2 id="crediti-es">20. Créditos</h2>
 <ul>
 <li>Datos del mapa: © OpenStreetMap contributors (licencia ODbL).</li>
 <li>Dibujo del mapa: MapLibre Native.</li>
@@ -1179,6 +1286,9 @@ footer{border-top:1px solid var(--bd);padding:24px 20px;text-align:center;color:
 </ul>
 <p class="sotto">IDQ Navigator indica el camino pero no sustituye a la prudencia: respeta siempre el código de circulación y la señalización, y no uses el teléfono mientras conduces.</p>
 
+<script>
+function tema(n){ document.body.className = n ? 'notte' : ''; }
+</script>
 </div>
 </main>
 <footer><span class="l" data-l="it">© IDQ Developer · <a href="funzioni.html">Tutte le funzioni</a> · <a href="privacy.html">Informativa sulla privacy</a> · <a href="mailto:info.idq.26@gmail.com">info.idq.26@gmail.com</a></span>
